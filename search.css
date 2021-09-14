@@ -1,0 +1,119 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(27, 27, 27, 0.904);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#search_btn {
+    border: 2px solid white;
+    height: 4.3rem;
+    width: 4.3rem;
+    border-radius: 502em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#search {
+    border: 1px;
+    background: rgba(231, 229, 229, 0.747);
+    height: 1.54rem;
+    width: 1.54rem;
+    border-radius: 5em;
+    margin-right: 1rem;
+    transition: all .5s ease-in-out;
+}
+
+
+/* #search::after {
+    content: ' ';
+    border: 1px solid white;
+    height: .35rem;
+    width: 1.2rem;
+    border-radius: 5px;
+    background: white;
+    transform: rotate(45deg);
+    margin-left: .8rem;
+} */
+
+#search_tail {
+    border: 1px;
+    height: .35rem;
+    width: 1.2rem;
+    border-radius: 8px;
+    background: rgba(231, 229, 229, 0.747);
+    transform: rotate(45deg);
+    margin-left: .8rem;
+    transition: all .5s ease-in-out;
+}
+
+#search_tail::before {
+    content: '';
+    display: none;
+    position: absolute;
+    border: 1px;
+    height: .35rem;
+    width: 1.2rem;
+    border-radius: 8px;
+    background: rgba(231, 229, 229, 0.747);
+    transform: rotate(-45deg);
+    /* margin-left: .8rem; */
+    transition: all .7s ease-in-out;
+}
+
+#s_icon {
+    height: 4.3rem;
+    width: 4.3rem;
+    border-radius: 502em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: .4rem;
+    padding-bottom: .2rem;
+}
+
+
+/* btn animation */
+
+#search_btn.see #search {
+    transform: translateX(-15px);
+    background: transparent;
+    /* display: none;
+    /* border: 1px;
+    height: .35rem;
+    width: 2.5rem;
+    border-radius: 8px;
+    background: rgba(231, 229, 229, 0.747);
+    transform: rotate(-45deg);
+    margin-left: .8rem;
+    margin-left: 0.4rem;
+    margin-top: 1rem; */
+}
+
+#search_btn.see #search_tail {
+    width: 2.5rem;
+    margin-left: 0rem;
+    margin-right: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+#search_btn.see #search_tail::before {
+    display: block;
+    width: 2.5rem;
+    margin-left: 0rem;
+    margin-right: 0.4rem;
+    margin-bottom: 1rem;
+    transform: rotate(-90deg);
+    /* transition: all .7s ease-in-out; */
+}
