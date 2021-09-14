@@ -24,6 +24,28 @@ body {
     cursor: pointer;
 }
 
+#search_btn:hover {
+    border: 3px solid white;
+}
+
+#s_icon:hover #search {
+    background: white;
+    height: 1.56rem;
+    width: 1.56rem;
+}
+
+#s_icon:hover #search_tail {
+    height: .37rem;
+    width: 1.2rem;
+    background: white;
+}
+
+#s_icon:hover #search_tail::before {
+    height: .37rem;
+    width: 1.2rem;
+    background: white;
+}
+
 #search {
     border: 1px;
     background: rgba(231, 229, 229, 0.747);
@@ -33,6 +55,13 @@ body {
     margin-right: 1rem;
     transition: all .5s ease-in-out;
 }
+
+
+/* #search:hover {
+    background: white;
+    height: 1.56rem;
+    width: 1.56rem;
+} */
 
 
 /* #search::after {
@@ -56,6 +85,13 @@ body {
     margin-left: .8rem;
     transition: all .5s ease-in-out;
 }
+
+
+/* #search_tail:hover {
+    height: .37rem;
+    width: 1.2rem;
+    background: white;
+} */
 
 #search_tail::before {
     content: '';
